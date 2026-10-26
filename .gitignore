@@ -1,0 +1,9 @@
+.venv/
+data/
+runs/
+results/
+*.pt
+*.docx
+*.pptx
+__pycache__/
+.vscode/
