@@ -1,7 +1,9 @@
 .venv/
-# Bỏ qua tất cả các thư mục con nằm bên trong data/raw/
-data/raw/*/
 data/dataset/
+# Bỏ qua toàn bộ nội dung bên trong data/raw/
+data/raw/*
+# Ngoại trừ tệp .gitkeep để giữ lại khung thư mục raw
+!data/raw/.gitkeep
 runs/
 *.pt
 *.docx
