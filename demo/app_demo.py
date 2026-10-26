@@ -28,7 +28,7 @@ def draw(frame, conf, show, imgsz=640):
         if c not in show: continue
         x1, y1, x2, y2 = map(int, b.xyxy[0])
         cv2.rectangle(frame, (x1, y1), (x2, y2), COL[c], 3)
-        cv2.putText(frame, f"{NAMES[c]} {float(b.conf):.2f}", (x1, max(22, y1 - 6)), 0, 0.8, COL[c], 2)
+        cv2.putText(frame, f"{float(b.conf):.2f}", (x1, max(22, y1 - 6)), 0, 0.8, COL[c], 2)
     return frame, n_no, n_ok
 
 
@@ -36,7 +36,7 @@ def run_image(img, conf, show_names):
     if img is None: return None, ""
     show = {NAMES.index(s) for s in show_names}
     bgr, n_no, n_ok = draw(cv2.cvtColor(img, cv2.COLOR_RGB2BGR), conf, show)
-    msg = (f"VI PHẠM: phát hiện {n_no} người KHÔNG đội mũ" if n_no else "Không phát hiện vi phạm") 
+    msg = (f"VI PHẠM: Phát hiện {n_no} người không đội mũ" if n_no else "Không phát hiện vi phạm") 
     return cv2.cvtColor(bgr, cv2.COLOR_BGR2RGB), msg
 
 
