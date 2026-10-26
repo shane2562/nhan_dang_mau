@@ -1,4 +1,4 @@
-# Phát hiện người đi xe máy không đội mũ bảo hiểm (YOLOv8 + EdgeVision)
+# Phát hiện người tham gia giao thông không đội mũ bảo hiểm (YOLOv8 + EdgeVision)
 
 ## 0. Cài môi trường trên Windows + VS Code
 1. Cài Python 3.10 hoặc 3.11 (python.org, tick "Add to PATH"), VS Code + extension **Python**.
