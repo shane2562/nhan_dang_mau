@@ -1,7 +1,6 @@
 .venv/
 data/
 runs/
-results/
 *.pt
 *.docx
 *.pptx

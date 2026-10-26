@@ -1,0 +1,7 @@
+﻿,mAP50,mAP50,mAP50_95,mAP50_95,R,R
+model,baseline,improved,baseline,improved,baseline,improved
+cls,,,,,,
+ALL,0.9343,0.9366,0.6882,0.6852,0.8966,0.9156
+BikeWithRider,0.9545,0.9528,0.8332,0.8059,0.924,0.9329
+Helmet,0.9354,0.94,0.6522,0.6595,0.8965,0.9116
+NoHelmet,0.9128,0.9169,0.5791,0.5901,0.8693,0.9023
