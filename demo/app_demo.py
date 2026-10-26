@@ -66,7 +66,7 @@ def run_stream(frame, conf, show_names):
     t = time.perf_counter()
     bgr, n_no, n_ok = draw(cv2.cvtColor(frame, cv2.COLOR_RGB2BGR), conf, show, imgsz=416)
     fps = 1 / max(time.perf_counter() - t, 1e-6)
-    msg = (f"VI PHẠM: {n_no} người KHÔNG đội mũ" if n_no else "Không phát hiện vi phạm")
+    msg = (f"VI PHẠM: {n_no} người không đội mũ" if n_no else "Không phát hiện vi phạm")
     return cv2.cvtColor(bgr, cv2.COLOR_BGR2RGB), f"{msg} | {fps:.1f} FPS"
 
 
