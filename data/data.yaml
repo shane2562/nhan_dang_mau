@@ -1,0 +1,8 @@
+path: D:/KHMT/Nhan_dang_mau/helmet_project/data/dataset
+train: images/train
+val: images/val
+test: images/test
+names:
+  0: BikeWithRider
+  1: NoHelmet
+  2: Helmet

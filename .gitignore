@@ -1,5 +1,7 @@
 .venv/
-data/
+# Bỏ qua tất cả các thư mục con nằm bên trong data/raw/
+data/raw/*/
+data/dataset/
 runs/
 *.pt
 *.docx
