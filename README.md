@@ -33,4 +33,4 @@ Hết bộ nhớ GPU: giảm `batch` hoặc `imgsz` trong `scripts/02_train.py`.
 Kết quả nằm ở `results/` (metrics.csv, violation.csv, errors_*.csv, error_cases_*/).
 
 ## 3. Cấu trúc
-scripts/ (code), demo/ (Gradio), results/ (số liệu, hình), docs/ (hướng dẫn báo cáo)
+scripts/ (code), demo/ (Gradio), results/ (số liệu, hình), runs/ (Số liệu đào tạo mô hình)

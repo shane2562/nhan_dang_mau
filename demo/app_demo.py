@@ -57,7 +57,8 @@ def run_video(path, conf, show_names):
     subprocess.run([imageio_ffmpeg.get_ffmpeg_exe(), "-y", "-i", raw, "-vcodec", "libx264",
                     "-pix_fmt", "yuv420p", "-movflags", "+faststart", out],
                    check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-    return out, f"{viol}/{tot} khung hình có người không đội mũ"
+    msg = "CÓ VI PHẠM: phát hiện người không đội mũ bảo hiểm trong video" if viol > 0 else "Không phát hiện vi phạm trong video"
+    return out, msg
 
 def run_stream(frame, conf, show_names):
     if frame is None:
